@@ -1,0 +1,143 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+
+{% block styles %}
+<style>
+  body{
+  font-size: 150%
+  }
+
+  img{
+  max-width:100%;
+  max-height:auto;
+  }
+
+
+</style>
+{% endblock %}
+
+
+{% block title %}
+Decisions on how to divide {{ Constants.endowment }} GHS
+{% endblock %}
+
+{% block content %}
+
+
+In this experiment, you will answer {{n_questions}} questions. In each
+question, we ask you to choose how to divide {{ Constants.endowment }} GHS betwen two
+options. 
+<br>
+<br>
+
+You will be choosing between pairs of the
+following options: keeping the money for yourself, a donation to the
+church, a donation to the national thanksgiving offering, or a
+donation to the street children's fund. Each of these is described in more detail below.
+<br>
+<br>
+
+After you have answered all {{n_questions}} questions, one of them
+will be randomly chosen, and your {{ Constants.endowment }} cedis will be spent according to the choice you made.
+<br>
+<br>
+
+
+<table>
+  
+  <tr>
+    <td>
+      <img src="{% static 'religion_session/envblank.png'  %}" />
+    </td>
+          <td>
+      <strong> Keep </strong>
+      Keep any money you allocate for yourself and add it to your
+      {{ Constants.showup_fee }} GHS.
+      <br>
+<br>
+
+	  </td>
+  </tr>
+
+    <tr>
+    <td>
+      <img src="{% static 'religion_session/envaog.png'  %}" />
+    </td>
+    
+    <td>
+<strong> Give money to your church anonymously</strong>
+Participants will be given the opportunity to make an offering that
+will go to the Assemblies of God Church.
+<br>
+<br>
+
+  </td>
+    </tr>
+
+     
+
+<tr>
+  <td>
+     <img src="{% static 'religion_session/envaog.png'  %}" />
+  </td>
+  <td>
+<strong> Give money to your church with your name</strong>
+Participants will be given the opportunity to make an offering that
+will go to the Assemblies of God Church. Their name will be written
+next to the amount of the contribution.
+
+{% formfield player.member_name %}
+<br>
+  </td>
+</tr>
+
+
+<tr>
+  <td>
+<img src="{% static 'religion_session/envstreet.png'  %}" />
+ </td>
+  <td>
+    <strong> Street Children's Empowerment Fund </strong>
+      <br>
+The SCEF is an organisation that works with street children around
+James Town. The organisation sponsors many projects primarily aimed at
+giving the children chance through education. Your donation would go
+      to support the work of this foundation.
+      <br>
+<br>
+
+  </td>
+</tr>
+
+
+<tr>
+  <td>
+<img src="{% static 'religion_session/envthanks.png'  %}" />
+  </td>
+
+  <td>
+    <strong> Thanksgiving offering </strong>
+      <br>
+Participants will be given the opportunity to make a donation to the
+thanksging offering that is collected during services held as part of
+the next National Prayer Week.
+<br>
+<br>
+    </td>
+</tr>
+
+
+
+</table>
+
+{% if practice == True %}
+
+You will first face a practice session.
+
+{% endif %}
+
+
+<p></p>
+{% next_button %}
+{% endblock %}

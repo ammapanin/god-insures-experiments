@@ -1,0 +1,8 @@
+In this experiment, you will answer {} questions. In each question, you will face two options on how you can spend 11 cedis. In each question, we ask you to choose the option where you would most prefer to spend the 11 cedis. For example, would you rather spend 11 cedis on
+A or B. 
+
+Instead of choosing between A or B, you will be choosing between the following options: a donation to the church, a public goods game played with other people in this room, or contributions towards a life insurance policy. Each of these is described in more detail below.
+
+
+After you have answered all {} questions, one of them will be randomly chosen, and your 11 cedis will be spent according to the choice you made.
+

@@ -1,0 +1,25 @@
+{% extends "otree/Page.html" %}
+{% load otree %}
+
+{% block global_styles  %}
+    <link rel="stylesheet" type="text/css" href="{% static 'global/theme.css' %}" />
+
+<style>
+  body{
+  font-size: 120%
+  }
+
+  title{
+  font-size: 170%
+  }
+  
+  p[class=practice]{
+  font-size:170%;
+  color: blue;
+  }
+</style>
+
+    {% endblock %}
+
+{% block global_scripts  %}
+{% endblock %}

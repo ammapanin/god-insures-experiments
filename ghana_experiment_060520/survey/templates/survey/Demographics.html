@@ -1,0 +1,25 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+  Please answer the following questions.
+{% endblock %}
+
+{% block content %}
+
+
+    {% for field in form %}
+
+    {{field.label}}
+<p></p>
+{{ field }}
+
+<p></p>
+<p></p>
+<br>
+
+{% endfor %}
+
+{% next_button %}
+
+{% endblock %}

@@ -1,0 +1,7 @@
+thanksgiving,Give GHS{money} to the thanksgiving offering,the thanksgiving offering,given to the thanksgiving offering,christian,0
+street,Give GHS{money} to Street Children's Fund,the street children,given to the street children,street,0
+keep,Keep GHS{money},keeping the money,kept,,0
+church_named,Give GHS{money} to {denomination} with your name,giving to the church with your name,given to the church with your name,aog,1
+church,Give GHS{money} to {denomination} privately,giving to the church privately,given to the church privately,aog,0
+market_named,Give GHS{money} to {unit_line} with your name,giving to the market with your name,given to the market with your name,market,1
+market,Give GHS{money} to {unit_line}  privately,giving to the market privately,given to the market privately,market,0

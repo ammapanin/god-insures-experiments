@@ -1,0 +1,39 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+
+{% block content %}
+
+<strong> Welcome to this study </strong>
+
+<br>
+<br>
+
+This study is part of a research project investigating religious
+beliefs and behaviour.
+
+<br>
+<br>
+
+In this session, you will complete two distinct tasks.
+
+<br>
+<br>
+
+First, we will ask you to complete a survey that covers questions on basic demographics and religious behaviour. The survey is completely confidential. Your name will not be recorded anywhere and only the enumerator sitting by you will see you writing down any answers.
+
+<br>
+<br>
+
+You will be paid {{ Constants.showup_fee }} ghs for completing the survey, which are yours
+to keep. In the second part of this session, we will ask you to make
+some decisions concerning how you wish to spend an additional
+{{ Constants.endowment }} ghs.
+
+<br>
+<br>
+The enumerator sitting next to you will guide you through the survey and the example decision task. Only you will complete the answers to the real decision task. Please feel free to stop an enumerator along the way if you have any questions or concerns.
+
+    {% next_button %}
+
+{% endblock %}

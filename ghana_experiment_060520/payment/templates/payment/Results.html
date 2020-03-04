@@ -1,0 +1,97 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+
+{% block styles %}
+<style>
+  body{
+  font-size: 150%
+  }
+</style>
+  {% endblock %}
+
+{% block title %}
+Final payouts
+{% endblock %}
+
+
+{% block content %}
+
+
+
+{% if practice == True %}
+<p class="practice"> {{ practice_text }} </p>
+
+{% endif %}
+
+{% autoescape off %}
+Your choice {{choice_letter}} has been selected for payment.
+<br>
+<br>
+
+You chose to {{option_1}} and {{option_2}}.
+
+<br>
+<br>
+<br>
+
+<table>
+  <tr>
+    <td>
+Your total payout is as follows:
+</td>
+    <td>
++ {{showup_fee}} ghs for completing the survey
+      </td>
+  </tr>
+
+  <tr>
+    <td>
+    </td>
+    <td>
+      + {{ Constants.endowment }} ghs additional payment
+    </td>
+  </tr>
+
+    <tr>
+    <td>
+    </td>
+    <td>
+      {{option_1_past}} 
+    </td>
+    </tr>
+
+
+        <tr>
+    <td>
+    </td>
+    <td>
+      {{option_2_past}} 
+    </td>
+     </tr>
+
+  <tr>
+    <td>
+      <strong> Total    </strong>
+    </td>
+    <td>
+    <strong>	{{total_earnings_text}}     </strong>
+    </td>
+
+  </tr>
+</table>
+
+
+{% if practice == True %}
+
+{% next_button %}
+
+  {% endif %}
+
+
+{% endautoescape %}
+
+{% endblock %}
+
+
+

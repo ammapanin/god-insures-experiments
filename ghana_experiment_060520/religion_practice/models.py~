@@ -1,0 +1,33 @@
+from otree.api import (
+    models, widgets, BaseConstants, BaseSubsession, BaseGroup, BasePlayer,
+    Currency as c, currency_range
+)
+
+from religion_session.models import (
+    Constants as religionConstants,
+    religionPlayer
+    )
+
+
+author = 'Your name here'
+
+doc = """
+App is a copy of the main religion_session module
+name_in_url is redefined
+"""
+
+
+class Constants(religionConstants):
+    name_in_url = 'religion_practice'
+
+
+class Subsession(BaseSubsession):
+    pass
+
+
+class Group(BaseGroup):
+    pass
+
+
+class Player(religionPlayer):
+    pass    

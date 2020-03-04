@@ -1,0 +1,315 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+
+
+{% block styles %}
+
+<style>
+  html, body {
+  scroll-snap-type: y mandatory;
+
+  }
+
+  cointainer{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  }
+
+  div{
+  scroll-snap-align: start;
+  }
+  
+  input[type = radio]{
+  display:inline;
+  vertical-align: bottom;
+  transform: scale(3);
+  line-height: 35px;
+  }
+
+  label[for^='id_allocation_']{ 
+  color:red;
+  font-size:0px;
+  }
+  
+  label{
+  display:inline;
+  font-size: 35px;
+  vertical-align:bottom;
+  margin:0;
+  }
+
+  img{
+  max-width:90%;
+  max-height:auto;
+  }
+
+</style>
+
+{% endblock %}
+
+{% block title %}
+ {{ question_number }} How do you want to divide 19 GHS?
+{% endblock %}
+
+
+{% block content %}
+
+
+{% if practice == True %}
+<br>
+
+<p class="practice"> {{ Constants.practice_text }} </p></strong>
+
+{% endif %}
+
+
+
+{% autoescape off %}
+
+<div class="container">
+  
+<table class = "table">
+  {{ form.allocation.errors }}
+
+  <div>
+  <tr>
+    <td>
+      {{ form.allocation.0 }} 
+      <label>
+	{{allocation0.0}} and {{allocation0.1}}
+      </label>
+      <br>
+      <img src="{% static image0  %}" />
+    </td>
+  </tr>
+    </div>
+
+   <div>
+   <tr>
+    <td>
+      {{ form.allocation.1 }} <label>
+	{{allocation1.0}} and {{allocation1.1}}
+      </label>
+      <br>
+      <img src="{% static image1  %}"/>
+    </td>   
+   </tr>
+   </div>
+
+      <div>
+    <tr>
+    <td>
+      {{ form.allocation.2 }} <label>
+	{{allocation2.0}} and {{allocation2.1}}
+      </label>
+      <br>
+      <img src="{% static image2  %}"/>
+    </td>   
+    </tr>
+      </div>
+
+      
+
+      <tr>
+    <td>
+      {{ form.allocation.3 }} <label>
+	{{allocation3.0}} and {{allocation3.1}}
+      </label>
+      <br>
+      <img src="{% static image3  %}"/>
+    </td>   
+      </tr>
+
+
+        <tr>
+    <td>
+      {{ form.allocation.4 }} <label>
+	{{allocation4.0}} and {{allocation4.1}}
+      </label>
+      <br>
+      <img src="{% static image4  %}"/>
+    </td>   
+	</tr>
+
+	
+	 <tr>
+    <td>
+      {{ form.allocation.5 }} <label>
+	{{allocation5.0}} and {{allocation5.1}}
+      </label>
+      <br>
+      <img src="{% static image5  %}"/>
+    </td>   
+	 </tr>
+
+
+	  <tr>
+    <td>
+      {{ form.allocation.6 }} <label>
+	{{allocation6.0}} and {{allocation6.1}}
+      </label>
+      <br>
+      <img src="{% static image6  %}"/>
+    </td>   
+	  </tr>
+
+
+	   <tr>
+    <td>
+      {{ form.allocation.7 }} <label>
+	{{allocation7.0}} and {{allocation7.1}}
+      </label>
+      <br>
+      <img src="{% static image7  %}"/>
+    </td>   
+	   </tr>
+
+
+
+	     <tr>
+    <td>
+      {{ form.allocation.8}} <label>
+	{{allocation8.0}} and {{allocation8.1}}
+      </label>
+      <br>
+      <img src="{% static image8  %}"/>
+    </td>   
+	     </tr>
+
+
+	      <tr>
+    <td>
+      {{ form.allocation.9 }} <label>
+	{{allocation9.0}} and {{allocation9.1}}
+      </label>
+      <br>
+      <img src="{% static image9  %}"/>
+    </td>   
+	      </tr>
+
+
+	       <tr>
+    <td>
+      {{ form.allocation.10 }} <label>
+	{{allocation10.0}} and {{allocation10.1}}
+      </label>
+      <br>
+      <img src="{% static image10  %}"/>
+    </td>   
+  </tr>
+
+
+  	       <tr>
+    <td>
+      {{ form.allocation.11 }} <label>
+	{{allocation11.0}} and {{allocation11.1}}
+      </label>
+      <br>
+      <img src="{% static image11  %}"/>
+    </td>   
+	       </tr>
+
+	          <tr>
+    <td>
+      {{ form.allocation.12 }} <label>
+	{{allocation12.0}} and {{allocation12.1}}
+      </label>
+      <br>
+      <img src="{% static image12  %}"/>
+    </td>   
+		  </tr>
+
+		     <tr>
+    <td>
+      {{ form.allocation.13 }} <label>
+	{{allocation13.0}} and {{allocation13.1}}
+      </label>
+      <br>
+      <img src="{% static image13  %}"/>
+    </td>   
+		     </tr>
+
+
+
+   <tr>
+    <td>
+      {{ form.allocation.14 }} <label>
+	{{allocation14.0}} and {{allocation14.1}}
+      </label>
+      <br>
+      <img src="{% static image14  %}"/>
+    </td>   
+   </tr>
+
+      <tr>
+    <td>
+      {{ form.allocation.15 }} <label>
+	{{allocation15.0}} and {{allocation15.1}}
+      </label>
+      <br>
+      <img src="{% static image15  %}"/>
+    </td>   
+      </tr>
+
+         <tr>
+    <td>
+      {{ form.allocation.16 }} <label>
+	{{allocation16.0}} and {{allocation16.1}}
+      </label>
+      <br>
+      <img src="{% static image16  %}"/>
+    </td>   
+	 </tr>
+
+	    <tr>
+    <td>
+      {{ form.allocation.17 }} <label>
+	{{allocation17.0}} and {{allocation17.1}}
+      </label>
+      <br>
+      <img src="{% static image17  %}"/>
+    </td>   
+	    </tr>
+
+	       <tr>
+    <td>
+      {{ form.allocation.18 }} <label>
+	{{allocation18.0}} and {{allocation18.1}}
+      </label>
+      <br>
+      <img src="{% static image18  %}"/>
+    </td>   
+	       </tr>
+
+	          <tr>
+    <td>
+      {{ form.allocation.19 }} <label>
+	{{allocation19.0}} and {{allocation19.1}}
+      </label>
+      <br>
+      <img src="{% static image19  %}"/>
+    </td>   
+  </tr>
+
+			
+</table>
+</div>
+   
+ <tr> 
+    <td> 
+         {% next_button %}
+     </td> 
+</tr>
+
+  {% endautoescape %}
+
+
+{% endblock %}
+
+ {% block scripts %}
+<script>
+<!-- setTimeout(function(){window.scrollTo(0, 600);},1) -->
+  </script>
+{% endblock %}

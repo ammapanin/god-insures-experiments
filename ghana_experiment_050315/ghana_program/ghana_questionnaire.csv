@@ -1,0 +1,75 @@
+How old are you?,list,"18,x80,x1",age,0,,all
+What is your gender?,choice,"Male,xFemale",gender,0,,all
+Where were you born?,choice,"Accra,xRural Ghana,xUrban Ghana (not Accra),xOutside Ghana in Africa,xOutside Africa",birthplace,0,,all
+How long have you lived in Accra?,choice,"Whole life,xMore than 10 years,x5 – 10 years,x2-5 years,xLess than 2 years",accra,0,,all
+What is your marital status?,choice,"Single,xMarried,xWidowed,xDivorced",married,0,,all
+What is your ethnic group?,choice,"Akan,xEwe,xGa Adangbe,xDagbani",ethnicity,1,,all
+What is the highest level of education you have completed?,choice,"No schooling,xPrimary,xJHSS,xSHS,xPolytechnic,xProfessional degree,xFirst degree,xAdvanced degree",education,0,,all
+"As an adult, have you ever left Ghana for more than 3 months for work or study?",choice,"Yes,xNo",left_ghana,0,,all
+Where did you go?,text,"ECOWAS,xOther parts of Africa,xOutside Africa",left_ghana_location,0,,all
+What is your current work status?,choice,"Student,xUnemployed or casual workers,xEmployed,xSelf-employed,xInactive(e.g. housewife),xRetired",work_status,1,,all
+In which sector is your principal activity?,choice,"Unemployed,xStudent,xGovernment,xAgriculture,xServices,xManufacturing or construction,xNot-for-profit",work_sector,1,,all
+What is your principal source of income?,choice,"Salaried job,xEntrepreneur,xFamily,xPension,xSocial support",income_source,1,,all
+Do you consider your earnings on a monthly or weekly basis?,choice,"Monthly,xWeekly",weekly_monthly,0,,all
+How much do you earn on average per {} in Ghana cedis?,multiple_list,"Less than 50,x50 -100,x100–150,x150-200,x200 – 250,x250-300,x300-350,x350-400,x400-450,x450-500,x500-600,x600-700,x700-800,x800-900,x900-1000,xMore than 1000",income_individual,0,"Less than 5,x5-10,x10–15,x15-20,x20–25,x25-30,x30-40,x40-50,x50-60,x60-70,x70-80,x80-90,x90-100,x100-150,x150-200,x200-250,x250-300,xMore than 300,XXLess than 50,x50 -100,x100–150,x150-200,x200 – 250,x250-300,x300-350,x350-400,x400-450,x450-500,x500-600,x600-700,x700-800,x800-900,x900-1000,xMore than 1000",all
+How much does your household earn on average per month in Ghana cedis?,list,"Less than 50,x50 -100,x100–150,x150-200,x200 – 250,x250-300,x300-350,x350-400,x400-450,x450-500,x500-600,x600-700,x700-800,x800-900,x900-1000,xMore than 1000",income_month_household,0,,all
+Who usually makes the final financial decisions in your household?,choice,"Me,xSpouse,xParent,xOther senior relative,xJoint decisions incl. me,xJoint decisions not incl. me",financial_decision,1,,all
+How many of these people do you take care of?,list_options,"Minor children,xAdult children,xElderly parents,xOther family,xOther community member",care,0,"0,x1,x2,x3,x4,x5,x6,xmore than 6",all
+How many of those you take care of live with you?,list_options,"Minor children,xAdult children,xElderly parent,xOther family,xOther community member",care_live,0,"0,x1,x2,x3,x4,x5,x6,xmore than 6",all
+How much do you usually spend on transport per week?,list,"Less than 5,x5-10,x10-15,x15-20,x20-25,x25-30,x30-40,x40-50,xMore than 50",transport_weekly,0,,all
+How much do you usually spend on food per week?,list,"Less than 5,x5-10,x10-15,x15-20,x20-25,x25-30,x30-35,x35-40,x40-50,x50-60,x60-70,x70-80,x80-90,x90-100,x100-110,x110-120,xMore than 120",food_weekly,0,,all
+Do you additionally face any of the following expenses on a regular monthly basis?,check,"Sickness(including medication costs, etc.),xSocial contribution (e.g. pledge to a school or charity),xMicrofinance or susu payments,xUtilities",monthly_expenses,0,,all
+How much do you spend per month in Ghana cedis on the expense?,list_options,"Sickness(including medication costs, etc.),xSocial contribution (e.g. pledge to a school or charity),xMicrofinance or susu payments,xUtilities",monthly_expenses_amount,0,"Less than 20GHS,x20-30GHS,x30-40GHS,x40-50GHS,x50-60GHS,x60-70GHS,x70-80GHS,x80-90GHS,x90-100GHS,x100-110GHS,x110-120GHS,xMore than 120GHS",all
+How much have you spent in business investments (your own or others) in the last year in Ghana cedis?,list,"I have made no business investments,xLess than 100,x100-150,x150-200,x200-300,x300-400,x400-500,x500-600,xMore than 600",business_investment,0,,all
+Do you own a business?,choice,"Yes,xNo",business_ownership,0,,all
+How many years have you owned your business?,choice,"Less than 1 year,x1 – 3 years,x3 – 10 years,xMore than 10 years",business_length,0,,all
+How many employees do you have?,list,"0,x10,x1",business_employees,0,,all
+Which religion do you belong to?,choice,"Pentecostal or charismatic Christian,xCatholic Christian,xTraditional,xProtestant Christian,xMuslim,xNo religion",religion,1,,all
+Were you born into this religion?,choice,"Yes,xNo",religion_birth,0,,all
+"Which denomination do you belong to? (Please specify a particular denomination and branch, e.g. Action Chapel, ICGC, etc.) ",choice,"Assemblies of God Shammah Temple,x Assemblies of God Ebenezer,xAssemblies of God Abundant Life,xAoG Dansoman Exhibition,xAoG House of Hope,xAoG Redemption ",denomination,1,,all
+Do you belong to a different denomination than 5 years ago?,choice,"No,xYes,I changed within the last 5 years,xYes, I changed more than 5 years ago",different_church,0,,all
+What are the main reasons you are with {}?,check,"The teaching about God corresponds to what I believe in,xI go for the moral guidance to me and my family,xI like the atmosphere of the services,xFriends or relatives brought me there,xOther members made an effort to welcome me,xThe congregation contains many interesting and successful people,xI hope to meet a good marriage partner for me or my children,xThe building is close to my home,xThe facilities are comfortable (e.g. airconditioning, comfortable seating, etc.)",church_reasons,1,,all
+Have you received financial assistance from {} in the last 2 years (incl. provisions)?,choice,"Yes,xNo",church_assistance,0,,all
+How many times per week or per year do you attend {}?,choice,"Less than once a year,xA few times per year,xA few times per month,xWeekly,xMore than once per week,xDaily",church_attendance,0,,all
+Are you engaged in any of the following ministries of your {}?,check,"Ushering or welcoming guests,xChildren's ministry,xPraise, worship, or choir,xPrayer ministry,xMen or women's ministry,xYouth ministry,xOutreach,xDeacon or deaconess,xProtocol,xPastoring,xBible study or Home fellowship",church_ministry,0,,all
+"How many hours a week do you spend on each ministry? (preparation, participation, etc.)",list_options,"Ushering or welcoming guests,xChildren's ministry,xPraise, worship, or choir,xPrayer ministry,xMen or women's ministry,xYouth ministry,xOutreach,xDeacon or deaconess,xProtocol,xPastoring,xBible study or Home fellowship",church_ministry_hours,0,"Less than 1 hour,x 1-3 hours,x 3-5 hours,xmore than 5 hours",all
+"On average, how many hours do you spend each time you visit {}? (e.g duration of a service, prayer meeting, etc.) ",choice,"Less than 1 hour,x1-2 hours,x 2-3 hours,xMore than 3 hours",church_length,0,,all
+How many hours do you travel (going and coming) to attend regular services at {}?,choice,"Less than 30minutes,x30minutes – 1 hour,xMore than 1 hour",church_distance,0,,all
+Have you moved your place of residence in order to be closer to {}?,choice,"Yes,xNo",church_move,0,,all
+"In the last 6 weeks, have you engaged in any of the following activities to bring others to {}?",check,"Preaching or teaching in the church,xPreaching or teaching outside the church,xInviting friends or family to church,xDistributing church material in public,xSpeaking or writing in public media (newspapers, radio, television, etc.),xPrayer",church_convince,0,,all
+How often do you pray to God?,choice,"Multiple times per day,xOnce per day,xA few times per week,xOccasionally",pray,0,,all
+Are there any foods you do not eat for religious reasons?,choice,"Yes,xNo",food,0,,all
+Do you drink alcohol?,choice,"Yes,xNo",alcohol,0,,all
+Is this decision for religious reasons?,choice,"Yes,xNo",alcohol_reasons,0,,all
+Do your religious beliefs affect the way you dress?,choice,"Yes,xNo",clothing,0,,all
+Which of the following ceremonies have you done or would you do for your newborn child?,check,"Traditional naming,xChurch blessing,xBaptism,xOutdooring party,xNothing",newborn,1,,all
+What was the main cause of the most recent death in your extended family?,choice,"Accident,xIllness,xViolence,xOld age",family_death,1,,all
+Do you think there was spiritual element involved?,choice,"Yes,xNo",spiritual_attack,0,,all
+How much on average do you give to the church per week in ghana cedis?,list,"Less than 5,x5–10,x10-15,x15–20,x20-25,x25-30,x30-35,x35-40,x40-45,x45-50,x50-55,x55-60,xMore than 60",church_giving,0,,all
+Have you already paid tithes this month?,choice,"Yes,xNo,xI do not regularly pay tithes",tithes,0,,all
+Have you ever gone into debt to pay a church pledge?,choice,"Yes,xNo",church_debt,0,,all
+Does giving to charity serve the same spiritual duty as giving directly to the {}?,choice,"No, charity is more important,xNo, charity is less important,xYes, they are equally important,xI do not think I have a duty to either.",charity,0,,all
+How is God involved in your finances?,choice,"God leaves me to run my own financial affairs,xGod provides enough that I do not suffer,xGod blesses me with financial abundance,xGod is not interested in my finances",god_finances,0,,all
+Is it important for you that your close friends come from the same {} as you?,choice,"Yes, I try to only make friends with people from my church or mosque,xYes, I try to seek people from my church or mosque but it is not so important,xNo, it is not important at all,xNo, I prefer not to be friends with people from my church or mosque",closefriends,0,,all
+Is it important for you that your coworkers come from the same {} as you?,choice,"Yes, I only work with people from my church or mosque,xYes, I try to seek people from my church or mosque but it is not so important,xNo, it is not important at all,xNo, I prefer not to work with people from my church or mosque",coworkers,0,,all
+Do you try to do business with people from the same {} as you?,choice,"Yes, I only work with people from my church,xYes, I try to seek people from my church but it is not so important,xNo, it is not important at all,x No, I prefer not to work with people from my church or mosque",business_partners,0,,all
+Who do you call when you need counselling about personal or family issues?,check,"No one,xGovernment or NGO social services,xFriends,x Family,xPastor,xImam,xChurch member,xWork superior,xMedical professional",help_family,1,,all
+"Who would you go to for financial help (e.g a loan, or money in an emergency)? ",check,"No one,xGovernment or NGO social services,xFriends,x Family,xChurch community,xBank,xInformal financial services (e.g susu group, moneylenders),xWork superior",help_financial,1,,all
+Who do you go to for medical support when you are sick?,check,"No one,xGovernment hospital,xPrivate hospital,xTraditional healer,xLocal clinic,xFriends,xFamily,xPastor,xImam,xWork superior",help_health,1,,all
+"Within the last 2 years, have you ever attended a prayer camp either for yourself or on behalf of a friend or family member?",choice,"Yes,xNo",prayercamp,0,,all
+Which other clubs or associations are you an active member of?,text,,clubs,0,,all
+Are you affiliated to any political parties?,choice,"Yes,xNo",political_affiliation,0,,all
+You have money and you are willing to support a national developmental project. Who will you give it to?,choice,"Government controlled by NPP,x Government controlled by NDC,x Another party other than NDC or NPP,xAny government in power,xI prefer to give money directly to my church,xI prefer to keep money for my own business",political_taxes,0,,all
+How did you meet your spouse if you are married? Where is the most likely place you will meet your spouse if you are not married?,choice,"Church,xThrough friends,xThrough family,xThrough work,xThrough school,xOther social gathering,xInternet",spouse,1,,all
+"Generally speaking, would you say other Ghanaians can be trusted?",choice,"People can almost always be trusted,xPeople can usually be trusted,xYou usually cannot be too careful dealing with people,xYou always cannot be too careful dealing with people",trust_ghana,0,,all
+How much of the time do you trust the Ghanaian government?,choice,"I always trust the government,xI mostly trust the government,xI mostly mistrust the government,xI always mistrust the government",trust_ghana_govt,0,,all
+Are you registered for the National Health Insurance Scheme?,choice,"No,xYes",nih,0,,all
+Why not?,text,,nih_reason,0,,all
+Do you hold any other sorts of insurance?,choice,"Yes,xNo",other_insurance,0,,all
+"Please specify which ones, including the type (e.g life insurance, car insurance, etc.)",text,,other_insurance_specify,0,,all
+Do you belong to the Kaneshie Markets Association?,choice,"Yes,xNo",kaneshie_association,0,,market
+How many years have you belonged to the association?,list,"1,x30,x1",kaneshie_years,0,,market
+How many years have you paid your market dues?,list,"1,x30,x1",kaneshie_dues,0,,market
+"Have you ever met Auntie Eva, the market secretary?",choice,"Yes,xNo, but I know who she is,xNo, I have no idea who she is",auntie_eva,0,,market
+"Have you ever received financial help from the market (loan, emergency money, help with stock, etc.)?",check,"Yes, from the head of the market line,xYes, from the Kaneshie Market Association,xYes, from any other market members,xNo, I have received no help from the market ",market_help,0,,market
+Which market line do you belong to?,text,,market_line,0,,market

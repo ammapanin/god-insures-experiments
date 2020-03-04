@@ -1,0 +1,10 @@
+H,church,thanksgiving
+J,church_named,street
+C,street,thanksgiving
+F,keep,church
+D,keep,street
+G,church,street
+A,keep,thanksgiving
+I,church_named,thanksgiving
+B,church,church_named
+E,keep,church_named

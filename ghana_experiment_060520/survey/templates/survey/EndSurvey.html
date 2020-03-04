@@ -1,0 +1,44 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+
+{% block style %}
+
+<style>
+  p[class=warning]{ 
+  color:green;
+  font-size:150px;
+}
+</style>
+
+{% endblock %}
+
+
+{% block content %}
+
+<strong> Thank you for completing the survey </strong>
+
+<br>
+<br>
+
+By clicking the button below, you acknowledge that you have completed
+the survey. For doing this, you will receive a total payment of
+{{ Constants.showup_fee }}GHS. This is yours to keep.
+
+<br>
+<br>
+You can now make decisions with an additional 19GHS.
+<br>
+<br>
+
+{% if insurance_treatment == True %}
+
+<p><font size="8" color="green"> Enumerators, please complete the insurance form before clicking Next.</font></p>
+
+{% endif %}
+
+   {% next_button %}
+
+{% endblock %}
+
+
